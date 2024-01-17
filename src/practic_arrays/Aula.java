@@ -18,11 +18,11 @@ private Alumnos alumnos[];
 	public void addAlumno(Alumnos alumno1) {
 
 		
-		
+		if(contador<alumnos.length) {
 		alumnos[contador]=alumno1;
 		
 		contador++;
-		
+		}
 	
 		
 		
@@ -42,7 +42,7 @@ private Alumnos alumnos[];
 
 		
 		
-	 return " [ "+ Arrays.toString(alumnos) +  "]";
+	 return "[ "+ Arrays.toString(alumnos) +  "]";
 	}
 
 }
